@@ -47,8 +47,7 @@ int main()
    vect1.insert(iter,5);//inserts 5 at the begining of the list display(vect1); 
    vect1.insert(iter+1,6);//iter+1 points to 2nd element i.e 1st index of the list
    display(vect1);
-   
-
+  
 }
 void display(vector<int> &v)
 {
@@ -59,64 +58,4 @@ void display(vector<int> &v)
     }
     cout<<endl;
 }
-
-
-
-
-
-
-
-
-/*#include <iostream>
-using namespace std;
-int main()
-{
-
-    int choice;
-
-    do{
-            cout<<"0.End Game\n1.Play Game"<<endl;
-            cout<<"enter you choice"<<endl;
-            cin>>choice;
-            switch(choice)
-    {
-    case 0:
-        cout<<"Hope you play next time"<<endl;
-        break;
-    case 1:
-        cout<<"let's continue the game"<<endl;
-
-    int secretNum=9;
-    int guessNum;
-    int guessCount=0;
-    int guessLimit=2;
-    bool outOfChances=false;
-
-    do{   if(guessCount<guessLimit)
-        {
-        cout<<"Enter your guess"<<endl;
-        cin>>guessNum;
-        guessCount++;
-        }
-        else{
-            outOfChances=true;
-        }
-
-    }while(secretNum!=guessNum&&!outOfChances);
-    if(outOfChances)
-    {
-        cout<<"You lost"<<endl;
-    } else
-    {cout<<"You Won"<<endl;}
-        break;
-    }
-
-    }while(choice!=0);
-
-    return 0;
-}*/
-
-
-
-
 
